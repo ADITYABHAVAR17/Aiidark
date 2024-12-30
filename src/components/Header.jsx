@@ -33,7 +33,7 @@ const Header = () => {
       className={`fixed w-full z-50 transition-all duration-300 ${
         atTop && !isOpen && !inAbout
           ? "bg-transparent"
-          : "bg-blue-600 nav-blur"
+          : "bg-gray-900 nav-blur"
       }`}
     >
       <div className="container mx-auto px-6">
@@ -44,7 +44,7 @@ const Header = () => {
             className="text-3xl font-bold text-white tracking-wide group flex items-center justify-between"
           >
             <img width="60px" src={Logo} alt="Logo" />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-white group-hover:from-white group-hover:to-blue-200 transition duration-300 px-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-white group-hover:from-white group-hover:to-gray-300 transition duration-300 px-4">
               Ventures
             </span>
           </a>
@@ -53,25 +53,25 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#about"
-              className="text-blue-100 hover:text-white transition-colors duration-300 hover:scale-105 transform"
+              className="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105 transform"
             >
               About
             </a>
             <a
               href="#services"
-              className="text-blue-100 hover:text-white transition-colors duration-300 hover:scale-105 transform"
+              className="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105 transform"
             >
               Services
             </a>
             <a
               href="#solutions"
-              className="text-blue-100 hover:text-white transition-colors duration-300 hover:scale-105 transform"
+              className="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105 transform"
             >
               Solutions
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 text-white bg-blue-600/20 hover:bg-blue-600/30 border border-blue-400/50 rounded-full hover:scale-105 transform transition-all duration-300"
+              className="px-6 py-3 text-white bg-gray-800/20 hover:bg-gray-800/30 border border-gray-600/50 rounded-full hover:scale-105 transform transition-all duration-300"
             >
               Contact Us
             </a>
@@ -117,32 +117,32 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div
-            className="md:hidden px-2 pt-2 pb-3 space-y-1 bg-white/10 rounded-2xl backdrop-blur-lg mb-4"
+            className="md:hidden px-2 pt-2 pb-3 space-y-1 bg-gray-800/10 rounded-2xl backdrop-blur-lg mb-4"
           >
             <a
               href="#about"
-              className="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+              className="block px-4 py-3 text-white hover:bg-gray-700/10 rounded-lg transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               About
             </a>
             <a
               href="#services"
-              className="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+              className="block px-4 py-3 text-white hover:bg-gray-700/10 rounded-lg transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               Services
             </a>
             <a
               href="#solutions"
-              className="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+              className="block px-4 py-3 text-white hover:bg-gray-700/10 rounded-lg transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               Solutions
             </a>
             <a
               href="#contact"
-              className="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-colors duration-300"
+              className="block px-4 py-3 text-white hover:bg-gray-700/10 rounded-lg transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               Contact

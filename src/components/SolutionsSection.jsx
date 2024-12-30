@@ -59,20 +59,31 @@ const SolutionsSection = () => {
   ];
 
   return (
-    <section id="solutions" className="py-20 bg-white">
+    <section id="solutions" className="py-20 bg-gray-900">
       <div className="container mx-auto px-6 lg:px-12">
-        <h2 className="text-4xl font-bold text-center text-blue-800 mb-8">Industry-Specific Solutions</h2>
-        <p className="text-center text-lg text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold text-center text-white mb-8">
+          Industry-Specific Solutions
+        </h2>
+        <p className="text-center text-lg text-white leading-relaxed mb-12 max-w-3xl mx-auto">
           Whether you're in healthcare, finance, retail, or manufacturing, Aii Ventures delivers technology-driven solutions that cater to your unique business needs.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div
+              key={index}
+              className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+            >
               <div className="flex items-center mb-4">
-                <img src={solution.icon} alt={`${solution.name} Icon`} className="h-10 w-10 mr-3" />
-                <h3 className="text-xl font-semibold text-blue-700">{solution.name}</h3>
+                <img
+                  src={solution.icon}
+                  alt={`${solution.name} Icon`}
+                  className="h-10 w-10 mr-3"
+                />
+                <h3 className="text-xl font-semibold text-white">
+                  {solution.name}
+                </h3>
               </div>
-              <ul className="space-y-2 text-gray-600">
+              <ul className="space-y-2 text-white">
                 {solution.items.map((item, i) => (
                   <li key={i}>• {item}</li>
                 ))}
